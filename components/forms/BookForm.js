@@ -73,6 +73,7 @@ function BookForm({ obj }) {
             name="description"
             value={formInput.description}
             onChange={handleChange}
+            required
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -100,7 +101,7 @@ function BookForm({ obj }) {
         <Form.Select
           name="author_id"
           onChange={handleChange}
-          value={obj.author_id}
+          value={formInput.author_id}
           required
         >
           <option value="">Select An Author</option>
